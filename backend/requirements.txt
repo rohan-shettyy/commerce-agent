@@ -1,0 +1,19 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+fastapi>=0.111,<0.112
+uvicorn[standard]>=0.29,<0.30
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3,<3.0
+python-multipart>=0.0.9
+google-genai>=1.0.0
+google-api-core>=2.19.0
+langchain>=0.3
+langchain-google-genai>=4.0.0
+langgraph>=0.2.0
+langgraph-checkpoint>=2.0.0
+faiss-cpu>=1.8,<1.9
+torch
+sentence-transformers>=3.0,<4.0
+pillow>=10.3,<11.0
+httpx>=0.28.1,<0.29
+ruff>=0.4,<0.5
+langdetect>=1.0.9

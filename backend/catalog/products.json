@@ -1,0 +1,512 @@
+[
+  {
+    "id": "beauty-1",
+    "name": "Essence Mascara Lash Princess",
+    "brand": "Essence",
+    "category": "beauty",
+    "price": 9.99,
+    "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+    "tags": ["beauty", "mascara"],
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+    "rating": 2.56,
+    "in_stock": true,
+    "attributes": {
+      "sku": "BEA-ESS-ESS-001",
+      "weight": 4,
+      "warranty": "1 week warranty"
+    }
+  },
+  {
+    "id": "beauty-2",
+    "name": "Eyeshadow Palette with Mirror",
+    "brand": "Glamour Beauty",
+    "category": "beauty",
+    "price": 19.99,
+    "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+    "tags": ["beauty", "eyeshadow"],
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+    "rating": 2.86,
+    "in_stock": true,
+    "attributes": {
+      "sku": "BEA-GLA-EYE-002",
+      "weight": 9,
+      "warranty": "1 year warranty"
+    }
+  },
+  {
+    "id": "beauty-3",
+    "name": "Powder Canister",
+    "brand": "Velvet Touch",
+    "category": "beauty",
+    "price": 14.99,
+    "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+    "tags": ["beauty", "face powder"],
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+    "rating": 4.64,
+    "in_stock": true,
+    "attributes": {
+      "sku": "BEA-VEL-POW-003",
+      "weight": 8,
+      "warranty": "3 months warranty"
+    }
+  },
+  {
+    "id": "beauty-4",
+    "name": "Red Lipstick",
+    "brand": "Chic Cosmetics",
+    "category": "beauty",
+    "price": 12.99,
+    "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+    "tags": ["beauty", "lipstick"],
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+    "rating": 4.36,
+    "in_stock": true,
+    "attributes": {
+      "sku": "BEA-CHI-LIP-004",
+      "weight": 1,
+      "warranty": "3 year warranty"
+    }
+  },
+  {
+    "id": "beauty-5",
+    "name": "Red Nail Polish",
+    "brand": "Nail Couture",
+    "category": "beauty",
+    "price": 8.99,
+    "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
+    "tags": ["beauty", "nail polish"],
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
+    "rating": 4.32,
+    "in_stock": true,
+    "attributes": {
+      "sku": "BEA-NAI-NAI-005",
+      "weight": 8,
+      "warranty": "1 month warranty"
+    }
+  },
+  {
+    "id": "fragrances-6",
+    "name": "Calvin Klein CK One",
+    "brand": "Calvin Klein",
+    "category": "fragrances",
+    "price": 49.99,
+    "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+    "tags": ["fragrances", "perfumes"],
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+    "rating": 4.37,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FRA-CAL-CAL-006",
+      "weight": 7,
+      "warranty": "1 week warranty"
+    }
+  },
+  {
+    "id": "fragrances-7",
+    "name": "Chanel Coco Noir Eau De",
+    "brand": "Chanel",
+    "category": "fragrances",
+    "price": 129.99,
+    "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+    "tags": ["fragrances", "perfumes"],
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+    "rating": 4.26,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FRA-CHA-CHA-007",
+      "weight": 7,
+      "warranty": "3 year warranty"
+    }
+  },
+  {
+    "id": "fragrances-8",
+    "name": "Dior J'adore",
+    "brand": "Dior",
+    "category": "fragrances",
+    "price": 89.99,
+    "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+    "tags": ["fragrances", "perfumes"],
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+    "rating": 3.8,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FRA-DIO-DIO-008",
+      "weight": 4,
+      "warranty": "1 week warranty"
+    }
+  },
+  {
+    "id": "fragrances-9",
+    "name": "Dolce Shine Eau de",
+    "brand": "Dolce & Gabbana",
+    "category": "fragrances",
+    "price": 69.99,
+    "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+    "tags": ["fragrances", "perfumes"],
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+    "rating": 3.96,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FRA-DOL-DOL-009",
+      "weight": 6,
+      "warranty": "3 year warranty"
+    }
+  },
+  {
+    "id": "fragrances-10",
+    "name": "Gucci Bloom Eau de",
+    "brand": "Gucci",
+    "category": "fragrances",
+    "price": 79.99,
+    "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+    "tags": ["fragrances", "perfumes"],
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+    "rating": 2.74,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FRA-GUC-GUC-010",
+      "weight": 7,
+      "warranty": "6 months warranty"
+    }
+  },
+  {
+    "id": "furniture-11",
+    "name": "Annibale Colombo Bed",
+    "brand": "Annibale Colombo",
+    "category": "furniture",
+    "price": 1899.99,
+    "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+    "tags": ["furniture", "beds"],
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+    "rating": 4.77,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FUR-ANN-ANN-011",
+      "weight": 10,
+      "warranty": "1 year warranty"
+    }
+  },
+  {
+    "id": "furniture-12",
+    "name": "Annibale Colombo Sofa",
+    "brand": "Annibale Colombo",
+    "category": "furniture",
+    "price": 2499.99,
+    "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+    "tags": ["furniture", "sofas"],
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+    "rating": 3.92,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FUR-ANN-ANN-012",
+      "weight": 6,
+      "warranty": "Lifetime warranty"
+    }
+  },
+  {
+    "id": "furniture-13",
+    "name": "Bedside Table African Cherry",
+    "brand": "Furniture Co.",
+    "category": "furniture",
+    "price": 299.99,
+    "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+    "tags": ["furniture", "bedside tables"],
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+    "rating": 2.87,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FUR-FUR-BED-013",
+      "weight": 2,
+      "warranty": "5 year warranty"
+    }
+  },
+  {
+    "id": "furniture-14",
+    "name": "Knoll Saarinen Executive Conference Chair",
+    "brand": "Knoll",
+    "category": "furniture",
+    "price": 499.99,
+    "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+    "tags": ["furniture", "office chairs"],
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+    "rating": 4.88,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FUR-KNO-KNO-014",
+      "weight": 10,
+      "warranty": "2 year warranty"
+    }
+  },
+  {
+    "id": "furniture-15",
+    "name": "Wooden Bathroom Sink With Mirror",
+    "brand": "Bath Trends",
+    "category": "furniture",
+    "price": 799.99,
+    "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+    "tags": ["furniture", "bathroom"],
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+    "rating": 3.59,
+    "in_stock": true,
+    "attributes": {
+      "sku": "FUR-BAT-WOO-015",
+      "weight": 10,
+      "warranty": "3 year warranty"
+    }
+  },
+  {
+    "id": "groceries-16",
+    "name": "Apple",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 1.99,
+    "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+    "tags": ["fruits"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+    "rating": 4.19,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-APP-016",
+      "weight": 9,
+      "warranty": "3 year warranty"
+    }
+  },
+  {
+    "id": "groceries-17",
+    "name": "Beef Steak",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 12.99,
+    "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
+    "tags": ["meat"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+    "rating": 4.47,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-BEE-017",
+      "weight": 10,
+      "warranty": "3 year warranty"
+    }
+  },
+  {
+    "id": "groceries-18",
+    "name": "Cat Food",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 8.99,
+    "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
+    "tags": ["pet supplies", "cat food"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+    "rating": 3.13,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-FOO-018",
+      "weight": 10,
+      "warranty": "1 year warranty"
+    }
+  },
+  {
+    "id": "groceries-19",
+    "name": "Chicken Meat",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 9.99,
+    "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
+    "tags": ["meat"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+    "rating": 3.19,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-CHI-019",
+      "weight": 1,
+      "warranty": "1 year warranty"
+    }
+  },
+  {
+    "id": "groceries-20",
+    "name": "Cooking Oil",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 4.99,
+    "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
+    "tags": ["cooking essentials"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+    "rating": 4.8,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-COO-020",
+      "weight": 5,
+      "warranty": "Lifetime warranty"
+    }
+  },
+  {
+    "id": "groceries-21",
+    "name": "Cucumber",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 1.49,
+    "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
+    "tags": ["vegetables"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
+    "rating": 4.07,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-CUC-021",
+      "weight": 4,
+      "warranty": "2 year warranty"
+    }
+  },
+  {
+    "id": "groceries-22",
+    "name": "Dog Food",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 10.99,
+    "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
+    "tags": ["pet supplies", "dog food"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
+    "rating": 4.55,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-FOO-022",
+      "weight": 10,
+      "warranty": "No warranty"
+    }
+  },
+  {
+    "id": "groceries-23",
+    "name": "Eggs",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 2.99,
+    "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
+    "tags": ["dairy"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+    "rating": 2.53,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-EGG-023",
+      "weight": 2,
+      "warranty": "1 week warranty"
+    }
+  },
+  {
+    "id": "groceries-24",
+    "name": "Fish Steak",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 14.99,
+    "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
+    "tags": ["seafood"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
+    "rating": 3.78,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-FIS-024",
+      "weight": 6,
+      "warranty": "1 month warranty"
+    }
+  },
+  {
+    "id": "groceries-25",
+    "name": "Green Bell Pepper",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 1.29,
+    "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
+    "tags": ["vegetables"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+    "rating": 3.25,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-GRE-025",
+      "weight": 2,
+      "warranty": "1 month warranty"
+    }
+  },
+  {
+    "id": "groceries-26",
+    "name": "Green Chili Pepper",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 0.99,
+    "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
+    "tags": ["vegetables"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
+    "rating": 3.66,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-GRE-026",
+      "weight": 7,
+      "warranty": "2 year warranty"
+    }
+  },
+  {
+    "id": "groceries-27",
+    "name": "Honey Jar",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 6.99,
+    "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
+    "tags": ["condiments"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
+    "rating": 3.97,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-HON-027",
+      "weight": 2,
+      "warranty": "1 month warranty"
+    }
+  },
+  {
+    "id": "groceries-28",
+    "name": "Ice Cream",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 5.49,
+    "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+    "tags": ["desserts"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+    "rating": 3.39,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-CRE-028",
+      "weight": 1,
+      "warranty": "1 month warranty"
+    }
+  },
+  {
+    "id": "groceries-29",
+    "name": "Juice",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 3.99,
+    "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
+    "tags": ["beverages"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
+    "rating": 3.94,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-JUI-029",
+      "weight": 1,
+      "warranty": "6 months warranty"
+    }
+  },
+  {
+    "id": "groceries-30",
+    "name": "Kiwi",
+    "brand": "Generic",
+    "category": "groceries",
+    "price": 2.49,
+    "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
+    "tags": ["fruits"],
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
+    "rating": 4.93,
+    "in_stock": true,
+    "attributes": {
+      "sku": "GRO-BRD-KIW-030",
+      "weight": 5,
+      "warranty": "6 months warranty"
+    }
+  }
+]

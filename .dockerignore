@@ -1,0 +1,33 @@
+# Git and hidden files
+.git
+.gitignore
+.dockerignore
+._*
+.DS_Store
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python artifacts
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.pytest_cache/
+.coverage
+.mypy_cache/
+
+# Node.js artifacts
+node_modules/
+dist/
+build/
+
+# Backend artifacts
+backend/catalog/faiss_index*
+backend/catalog/image_index*
+
+# Local environment
+.env
+.env.local

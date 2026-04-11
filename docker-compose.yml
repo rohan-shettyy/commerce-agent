@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    env_file: .env
+    ports:
+      - "8000:8000"
+    # volumes:
+    #   - ./backend:/app/backend
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    # volumes:
+    #   - node_modules:/app/node_modules
+    #   - ./frontend:/app # Disabled bind-mount to bypass external drive issues
+
+volumes:
+  pip_cache:
+  node_modules:
