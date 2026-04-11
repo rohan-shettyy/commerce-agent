@@ -1,3 +1,13 @@
+---
+title: Commerce Agent Backend
+emoji: 🛒
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🛒 ShopBot — AI Commerce Assistant
 
 ShopBot is a production-grade, multimodal AI shopping assistant inspired by Amazon Rufus. It provides a unified agent experience across **text**, **voice**, and **image** modalities to help users discover products, get recommendations, and navigate a curated catalog.

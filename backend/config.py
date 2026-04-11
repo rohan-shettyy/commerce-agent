@@ -24,8 +24,8 @@ class Settings(BaseSettings):
     """
 
     GEMINI_API_KEY: str
-    GEMINI_MODEL: str = "gemini-3.1-flash-lite-preview"
-    GEMINI_TTS_MODEL: str = "gemini-2.5-pro-preview-tts"
+    GEMINI_MODEL: str = "gemini-1.5-flash"
+    GEMINI_TTS_MODEL: str = "gemini-1.5-flash"
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
     ALLOWED_ORIGINS: Union[List[str], str] = ["http://localhost:5173"]
