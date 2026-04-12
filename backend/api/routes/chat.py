@@ -114,7 +114,9 @@ async def chat_endpoint(request: ChatRequest) -> Union[ChatResponse, JSONRespons
 
         # 5. Extract tool outputs to identify products returned to the user
         tool_calls_made: List[str] = []
-        products_map: Dict[str, ProductSummary] = {}
+        # Separate priority products (direct mentions) from general products (search results)
+        priority_products: Dict[str, ProductSummary] = {}
+        general_products: Dict[str, ProductSummary] = {}
 
         for msg in messages:
             # Check for AI messages that made tool calls
@@ -124,23 +126,36 @@ async def chat_endpoint(request: ChatRequest) -> Union[ChatResponse, JSONRespons
 
             # Check for Tool messages (the outputs)
             if msg.type == "tool":
-                # Tools: search_products, filter_products, get_product_details
-                if msg.name in ["search_products", "filter_products", "get_product_details"]:
+                if msg.name in ["search_products", "filter_products", "get_product_details", "lookup_products_by_name"]:
                     try:
                         parsed_output = json.loads(msg.content)
                         items = parsed_output if isinstance(parsed_output, list) else [parsed_output]
+                        
+                        target_map = priority_products if msg.name == "lookup_products_by_name" else general_products
+                        
                         for p in items:
-                            if isinstance(p, dict) and "id" in p and p["id"] not in products_map:
-                                products_map[p["id"]] = ProductSummary(**p)
+                            if isinstance(p, dict) and "id" in p:
+                                pid = p["id"]
+                                # Add to priority if it's from the lookup tool
+                                if msg.name == "lookup_products_by_name":
+                                    priority_products[pid] = ProductSummary(**p)
+                                    # Remove from general if it was already there
+                                    general_products.pop(pid, None)
+                                # Add to general only if not already in priority
+                                elif pid not in priority_products and pid not in general_products:
+                                    general_products[pid] = ProductSummary(**p)
+                                    
                     except (json.JSONDecodeError, TypeError, KeyError) as parse_e:
                         logger.warning(f"Failed to parse tool output from {msg.name}: {parse_e}")
 
+        # Final ordered list: priority mentions followed by general results
+        final_products = list(priority_products.values()) + list(general_products.values())
         latency_ms = (time.monotonic() - start_time) * 1000
 
         return ChatResponse(
             session_id=request.session_id,
             reply=str(reply),
-            products=list(products_map.values()),
+            products=final_products,
             tool_calls_made=tool_calls_made,
             latency_ms=latency_ms
         )

@@ -64,13 +64,18 @@ def search_products_by_text(query: str) -> str:
     # 2. Normalize embedding with L2 norm
     faiss.normalize_L2(query_vec)
     # 3. Search pre-built FAISS text index
-    k = min(5, len(_catalog))
-    _, indices = _text_index.search(query_vec, k)
+    k = min(10, len(_catalog))  # Fetch more to allow for filtering
+    distances, indices = _text_index.search(query_vec, k)
     
-    # 4. Return top matched products
+    # 4. Return matched products meeting relevance threshold
+    threshold = 0.6
     results = []
-    for idx in indices[0]:
+    for i, idx in enumerate(indices[0]):
         if 0 <= idx < len(_catalog):
+            score = float(distances[0][i])
+            if score < threshold:
+                continue
+                
             p = _catalog[idx]
             results.append({
                 "id": p.id,
@@ -80,7 +85,8 @@ def search_products_by_text(query: str) -> str:
                 "description": p.description,
                 "rating": p.rating,
                 "category": p.category,
-                "image_url": p.image_url
+                "image_url": p.image_url,
+                "relevance_score": round(score, 3)
             })
     return json.dumps(results)
 
@@ -164,5 +170,52 @@ def filter_products(category: Optional[str] = None,
     return json.dumps(results)
 
 
+@tool("lookup_products_by_name")
+def lookup_products_by_name(product_names: List[str]) -> str:
+    """Find specific products in the catalog by their exact or near-exact names.
+
+    Use this tool whenever the user mentions specific product names.
+    This tool ensures those products are retrieved and prioritized.
+    The order of names in the input list will be preserved in the output.
+
+    Args:
+        product_names: A list of product names as mentioned by the user.
+
+    Returns:
+        JSON string containing the list of matched products in order.
+    """
+    if not _catalog:
+        return "[]"
+
+    results = []
+    # Search for each name to maintain order
+    for name in product_names:
+        name_lower = name.lower().strip()
+        for p in _catalog:
+            # Check for exact or close match
+            if name_lower == p.name.lower().strip() or name_lower in p.name.lower():
+                results.append({
+                    "id": p.id,
+                    "name": p.name,
+                    "brand": p.brand,
+                    "price": p.price,
+                    "description": p.description,
+                    "rating": p.rating,
+                    "category": p.category,
+                    "image_url": p.image_url,
+                    "mention_priority": True
+                })
+                # Break internal loop to move to next name (only find first match per name)
+                break
+    
+    return json.dumps(results)
+
+
 # Expose tools array for LangChain
-AGENT_TOOLS = [search_products_by_text, get_product_details, list_categories, filter_products]
+AGENT_TOOLS = [
+    search_products_by_text, 
+    get_product_details, 
+    list_categories, 
+    filter_products, 
+    lookup_products_by_name
+]
